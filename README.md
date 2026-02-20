@@ -54,6 +54,7 @@ No arquivo `appsettings.json` dentro do projeto **SuperHero.Api**, ajuste a cone
 ```
 
 **Prepare o Banco de Dados:**
+
 Você pode criar as tabelas de duas formas:
 
 * **Via EF Core Migrations**: No terminal, na pasta raiz da solução:
