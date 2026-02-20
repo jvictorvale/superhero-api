@@ -1,8 +1,42 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1D1E02BD-36E6-4923-9EDB-89B34B9192E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperHero.Domain", "src\SuperHero.Domain\SuperHero.Domain.csproj", "{90ECEA1E-F42A-4759-84FB-201DCA38F80A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperHero.Infrastructure", "src\SuperHero.Infrastructure\SuperHero.Infrastructure.csproj", "{74FC7DBC-E39C-4099-A8C0-A08188BF534B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperHero.Application", "src\SuperHero.Application\SuperHero.Application.csproj", "{7B26C25C-14E3-43D3-8F51-DF40A0148A79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperHero.Api", "src\SuperHero.Api\SuperHero.Api.csproj", "{7AAA81B8-5DB6-4607-99F2-E70E9CC3C943}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90ECEA1E-F42A-4759-84FB-201DCA38F80A} = {1D1E02BD-36E6-4923-9EDB-89B34B9192E1}
+		{74FC7DBC-E39C-4099-A8C0-A08188BF534B} = {1D1E02BD-36E6-4923-9EDB-89B34B9192E1}
+		{7B26C25C-14E3-43D3-8F51-DF40A0148A79} = {1D1E02BD-36E6-4923-9EDB-89B34B9192E1}
+		{7AAA81B8-5DB6-4607-99F2-E70E9CC3C943} = {1D1E02BD-36E6-4923-9EDB-89B34B9192E1}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90ECEA1E-F42A-4759-84FB-201DCA38F80A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90ECEA1E-F42A-4759-84FB-201DCA38F80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90ECEA1E-F42A-4759-84FB-201DCA38F80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90ECEA1E-F42A-4759-84FB-201DCA38F80A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FC7DBC-E39C-4099-A8C0-A08188BF534B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FC7DBC-E39C-4099-A8C0-A08188BF534B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FC7DBC-E39C-4099-A8C0-A08188BF534B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FC7DBC-E39C-4099-A8C0-A08188BF534B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B26C25C-14E3-43D3-8F51-DF40A0148A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B26C25C-14E3-43D3-8F51-DF40A0148A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B26C25C-14E3-43D3-8F51-DF40A0148A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B26C25C-14E3-43D3-8F51-DF40A0148A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AAA81B8-5DB6-4607-99F2-E70E9CC3C943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AAA81B8-5DB6-4607-99F2-E70E9CC3C943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AAA81B8-5DB6-4607-99F2-E70E9CC3C943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AAA81B8-5DB6-4607-99F2-E70E9CC3C943}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
