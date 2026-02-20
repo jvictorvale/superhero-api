@@ -18,7 +18,7 @@ public class HeroiController : BaseController
     }
     
     [HttpPost]
-    [SwaggerOperation(Summary = "Criar um Herói", Tags = new[] { "Herói - Herois" })]
+    [SwaggerOperation(Summary = "Criar um Herói", Tags = new[] { "Heroi" })]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -29,7 +29,7 @@ public class HeroiController : BaseController
     }
     
     [HttpPut("{id}")]
-    [SwaggerOperation(Summary = "Atualizar um Herói", Tags = new[] { "Herói - Herois" })]
+    [SwaggerOperation(Summary = "Atualizar um Herói", Tags = new[] { "Heroi" })]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -41,7 +41,7 @@ public class HeroiController : BaseController
     }
     
     [HttpDelete("{id}")]
-    [SwaggerOperation(Summary = "Deletar um Herói", Tags = new[] { "Herói - Herois" })]
+    [SwaggerOperation(Summary = "Deletar um Herói", Tags = new[] { "Heroi" })]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -55,7 +55,7 @@ public class HeroiController : BaseController
     }
     
     [HttpGet]
-    [SwaggerOperation(Summary = "Obter todos os Heróis", Tags = new[] { "Herói - Herois" })]
+    [SwaggerOperation(Summary = "Obter todos os Heróis", Tags = new[] { "Heroi" })]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(StatusCodes.Status403Forbidden)]
@@ -72,7 +72,7 @@ public class HeroiController : BaseController
     }
 
     [HttpGet("{id}")]
-    [SwaggerOperation(Summary = "Obter um Herói", Tags = new[] { "Herói - Herois" })]
+    [SwaggerOperation(Summary = "Obter um Herói por id", Tags = new[] { "Heroi" })]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]

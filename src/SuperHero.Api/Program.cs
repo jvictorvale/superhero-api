@@ -32,7 +32,10 @@ builder.Services.ConfigureApplication(builder.Configuration);
 builder.Services.AddRouting(c => c.LowercaseUrls = true);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.EnableAnnotations();
+});
 
 var app = builder.Build();
 
