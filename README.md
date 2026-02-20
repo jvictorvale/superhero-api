@@ -72,4 +72,14 @@ A documentação estará disponível em: http://localhost:44388/swagger (ou na p
 
 <img width="1511" height="879" alt="image" src="https://github.com/user-attachments/assets/b6c45094-462e-48fb-92e9-fe246257766d" />
 
+## 🚀 Possíveis Melhorias (Backlog)
+
+Embora o projeto cumpra todos os requisitos solicitados, em um cenário de produção real, eu implementaria:
+
+1. **Testes Unitários e de Integração**: Implementação de testes usando xUnit e Moq para garantir a estabilidade das regras de negócio no Domain e Application.
+2. **Autenticação e Autorização**: Implementação de login seguro utilizando JWT (JSON Web Tokens) e Refresh Tokens.
+3. **Logs Estruturados**: Adição do Serilog para monitoramento de erros e métricas da aplicação em tempo real.
+4. **Dockerização**: Criação de um `docker-compose.yml` para subir a API e o banco MySQL com um único comando.
+5. **Caching**: Implementação de Redis para consultas de superpoderes, já que são dados que mudam com pouca frequência.
+6. **Notificações em Real-time**: Uso de SignalR para atualizar a lista de heróis instantaneamente quando um novo for cadastrado por outro usuário.
 
