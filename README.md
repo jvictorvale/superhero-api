@@ -41,23 +41,28 @@ Para garantir a consistência dos dados, foram aplicadas as seguintes validaçõ
 **Clone o repositório:**
 ```bash
 git clone https://github.com/seu-usuario/superhero-api.git
-cd super-hero-api
+cd superhero-api
 ```
 
 **Configure a String de Conexão:**
 
-No arquivo appsettings.json dentro do projeto SuperHero.Api, ajuste a conexão com seu MySQL:
+No arquivo `appsettings.json` dentro do projeto **SuperHero.Api**, ajuste a conexão com seu MySQL:
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "server=localhost;port=3306;user=root;password={senha};database=SuperHeroDB"
+  "DefaultConnection": "server=localhost;port=3306;user=root;password={SUA_SENHA};database=SuperHeroDB"
 }
 ```
 
-**Execute as Migrations:**
-No terminal, dentro da pasta raiz:
+**Prepare o Banco de Dados:**
+Você pode criar as tabelas de duas formas:
+
+* **Via EF Core Migrations**: No terminal, na pasta raiz da solução:
 ```bash
 dotnet ef database update --project src/SuperHero.Infrastructure --startup-project src/SuperHero.Api
 ```
+* **Via Script SQL Manual**: Utilize o script completo disponível em:
+
+`script_sql/script_criacao_banco.sql`
 
 **Rode a API:**
 ```bash
@@ -66,7 +71,7 @@ dotnet run --project src/SuperHero.Api
 
 **Acesse o Swagger:**
 
-A documentação estará disponível em: http://localhost:44388/swagger (ou na porta configurada).
+Acesse o Swagger: http://localhost:44388/swagger (ou na porta indicada no console após o `dotnet run`).
 
 **Interface do Swagger documentando os endpoints de Herói e Superpoder**
 
